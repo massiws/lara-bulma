@@ -3,30 +3,25 @@
 
     Usage example:
     @include('components.form.text', [
-        'field' => 'last_name' | 'object.name',
+        'field' => 'last_name'
         'label' => __(file.key) (default: __("general.$field"))
         'required' => 'required' (default: '')
         'icon' => 'envelop' (default: no icon displayed),
         'readonly' (default: none)
     ])
 --}}
-@if (strpos($field, ".") !== false)
-    {{ $field = explode('.', $field)[1] }}
-@endif
-
 <div class="field is-horizontal">
     <div class="field-label is-normal">
-        <label for="{{ $field }}" class="label">{{ !empty($label) ? __($label) : __("general.$field") }}</label>
+        {!! Form::label($field, !empty($label) ? __($label) : __("general.$field"), ['class' => 'label']) !!}
     </div>
     <div class="field-body">
         <div class="field">
             <div class="control {{ !empty($icon) ? 'has-icons-left' : '' }}">
-                <input type="text" name="{{ $field }}" class="input"
-                    placeholder="{{ !empty($label) ? __($label) : __("general.$field") }}"
-                    value="{{ old($field) }}"
-                    {{ !empty($required) ? ' required=""' : '' }}
-                    {{ !empty($readonly) ? ' readonly' : '' }}
-                >
+                {{ Form::text($field, old($field), [
+                    'class' => 'input',
+                    'placeholder' => !empty($label) ? __($label) : __("general.$field")
+                ]) }}
+
                 @if (!empty($icon))
                     <span class="icon is-small is-left">
                         <i class="fa fa-{{ $icon }}" aria-hidden="true"></i>
