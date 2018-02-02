@@ -28,6 +28,7 @@ return [
     'view' => 'View',
     'delete' => 'Delete',
     'save' => 'Save',
+    'upload_image' => 'Upload an image',
 
     // Form fields
     'username' => 'User Name',
@@ -42,4 +43,3 @@ return [
     'associated_users' => 'Associated users',
 
 ];
-

@@ -62,7 +62,7 @@
                             <input class="file-input" type="file" name="avatar" id="avatar" data-multiple-caption="{count} file uploaded">
                             <span class="file-cta">
                                 <span class="file-icon"><i class="fa fa-upload" aria-hidden="true"></i></span>
-                                <span class="file-label">Seleziona un file</span>
+                                <span class="file-label">{{ __('general.upload_image') }}</span>
                             </span>
                         </label>
                     </div>
