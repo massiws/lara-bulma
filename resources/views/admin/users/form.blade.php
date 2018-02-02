@@ -55,14 +55,14 @@
             <div class="field">
                 <div class="control">
                     <figure class="image is-128x128 is-rounded has-text-centered">
-                        <img src="{{ asset(env('AVATAR_FOLDER') . "/$user->avatar") }}">
+                        <img src="{{ is_null($user->avatar) ? asset(env('DEFAULT_AVATAR', '-')) : asset(env('AVATAR_FOLDER') . '/' . $user->avatar) }}">
                     </figure>
                     <div class="file is-info has-name">
                         <label class="file-label" for="avatar">
                             <input class="file-input" type="file" name="avatar" id="avatar" data-multiple-caption="{count} file uploaded">
                             <span class="file-cta">
                                 <span class="file-icon"><i class="fa fa-upload" aria-hidden="true"></i></span>
-                                <span class="file-label">Seleziona un file</span>
+                                <span class="file-label">{{ __('general.upload_image') }}</span>
                             </span>
                         </label>
                     </div>

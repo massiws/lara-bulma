@@ -28,6 +28,7 @@ return [
     'view' => 'Visualizza',
     'delete' => 'Elimina',
     'save' => 'Salva',
+    'upload_image' => 'Carica un\'immagine',
 
     // Form fields
     'username' => 'Nome utente',
@@ -42,4 +43,3 @@ return [
     'associated_users' => 'Utenti correlati',
 
 ];
-
