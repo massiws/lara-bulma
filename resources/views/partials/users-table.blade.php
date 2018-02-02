@@ -14,11 +14,9 @@
             <tr data-uid="{{ $user->id }}">
                 <td class="has-text-right is-hidden-mobile">{{ $user->id }}</td>
                 <td class="has-text-centered is-hidden-touch">
-                    @if (!empty($user->avatar))
-                        <figure class="image is-rounded is-24x24 container">
-                            <img src="{{ asset(env('AVATAR_FOLDER') . "/$user->avatar") }}">
-                        </figure>
-                    @endif
+                    <figure class="image is-rounded is-24x24 container">
+                        <img src="{{ is_null($user->avatar) ? asset(env('DEFAULT_AVATAR', '-')) : asset(env('AVATAR_FOLDER') . '/' . $user->avatar) }}">
+                    </figure>
                 </td>
                 <td>{{ $user->name }}</td>
                 <td class="is-hidden-mobile">{{ $user->email }}</td>

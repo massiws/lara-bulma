@@ -1,7 +1,7 @@
 <div class="menu-label sidebar-avatar is-flex">
     <div class="media">
         <figure class="media-left image is-rounded is-32x32">
-            <img src="/storage/avatars/{{ optional(Auth::user())->avatar ? Auth::user()->avatar : env('DEFAULT_AVATAR', '') }}">
+            <img src="{{ is_null(Auth::user()->avatar) ? asset(env('DEFAULT_AVATAR', '-')) : asset(env('AVATAR_FOLDER') . '/' . Auth::user()->avatar) }}">
         </figure>
         <div class="media-content">
             <div class="content">

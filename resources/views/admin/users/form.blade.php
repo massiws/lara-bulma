@@ -55,7 +55,7 @@
             <div class="field">
                 <div class="control">
                     <figure class="image is-128x128 is-rounded has-text-centered">
-                        <img src="{{ asset(env('AVATAR_FOLDER') . "/$user->avatar") }}">
+                        <img src="{{ is_null($user->avatar) ? asset(env('DEFAULT_AVATAR', '-')) : asset(env('AVATAR_FOLDER') . '/' . $user->avatar) }}">
                     </figure>
                     <div class="file is-info has-name">
                         <label class="file-label" for="avatar">

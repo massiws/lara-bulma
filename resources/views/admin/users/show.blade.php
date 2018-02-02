@@ -18,7 +18,7 @@
                         <div class="media">
                             <div class="media-left">
                                 <figure class="image is-96x96 is-rounded">
-                                    <img src="{{ asset(env('AVATAR_FOLDER') . "/$user->avatar" ?: env('DEFAULT_AVATAR')) }}">
+                                    <img src="{{ is_null($user->avatar) ? asset(env('DEFAULT_AVATAR', '-')) : asset(env('AVATAR_FOLDER') . '/' . $user->avatar) }}">
                                 </figure>
                             </div>
                             <div class="media-content">

@@ -19,7 +19,7 @@ class AddUserFields extends Migration
                 $table->foreign('role_id')->references('id')->on('roles')->onUpdate('no action')->onDelete('set null');
             }
             if (!Schema::hasColumn('users', 'avatar')) {
-                $table->string('avatar')->nullable()->after('email')->default(env('DEFAULT_AVATAR', null));
+                $table->string('avatar')->nullable()->after('email')->default(null);
             }
         });
     }
