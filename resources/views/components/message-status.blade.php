@@ -10,8 +10,9 @@
         @if (!empty($title))
             <div class="message-header">{{ $title }}</div>
         @endif
-        <div class="notification {{ empty($style) ?: 'is-' . $style }}">
+
+        @component('components.notification', ['style' => $style])
             {{ $slot }}
-        </div>
+        @endcomponent
     </div>
 @endif

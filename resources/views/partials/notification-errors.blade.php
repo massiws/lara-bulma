@@ -4,5 +4,7 @@
     @includeWhen($errors->any(), 'partials.notification-errors', ['errors' => $errors])
 --}}
 @foreach ($errors->all() as $error)
-    <div class="notification is-danger">{{ $error }}</div>
+    @component('components.notification', ['style' => 'danger'])
+        {{ $error }}
+    @endcomponent
 @endforeach
