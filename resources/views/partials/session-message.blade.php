@@ -7,7 +7,8 @@
         return redirect()->route('dashboard')->with(['status' => __('file.message'), 'style' => 'danger']);
 --}}
 @if (session('status'))
-    <div class="notification column is-4 is-offset-4 has-text-centered is-{{ session('style') ? session('style') : 'info' }}">
+    @component('components.notification', [
+        'style' => session('style') ? session('style') : 'info', 'class' => 'column is-4 is-offset-4 has-text-centered'])
         {{ session('status') }}
-    </div>
+    @endcomponent
 @endif
