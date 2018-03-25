@@ -1,0 +1,12 @@
+{
+    "name": "massiws/lara-bulma",
+    "description": "Laravel theme based on Bulma CSS framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Massimo Simonini",
+            "email": "massiws@gmail.com"
+        }
+    ],
+    "require": {}
+}
