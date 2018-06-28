@@ -31,7 +31,7 @@
                     <div class="navbar-dropdown is-right is-boxed">
                         <a class="navbar-item" href="{{ route('users.show', ['id' => Auth::id()]) }}" title="Profile">
                             <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                            <span>&nbsp;{{ Auth::user()->name }}</span>
+                            <span>&nbsp;@lang('general.profile')</span>
                         </a>
 
                         <a class="navbar-item" href="{{ route('logout') }}" title="Log out"

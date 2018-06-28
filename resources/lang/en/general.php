@@ -14,6 +14,9 @@ return [
     'edit_role' => 'Edit role',
     'edit_permission' => 'Edit permission',
 
+    // Menu
+    'profile' => 'Profile',
+
     // Alert messages
     'error_on_delete' => 'Error deleting entity!',
     'confirm_delete' => 'Are you sure to delete item :id?',

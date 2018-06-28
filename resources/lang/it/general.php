@@ -14,6 +14,9 @@ return [
     'edit_role' => 'Modifica ruolo',
     'edit_permission' => 'Modifica permesso',
 
+    // Menu
+    'profile' => 'Profilo',
+
     // Alert messages
     'error_on_delete' => 'Errore durante la cancellazione!',
     'confirm_delete' => 'Confermi la cancellazione del record #:id?',
