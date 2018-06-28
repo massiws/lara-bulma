@@ -34,7 +34,6 @@ return [
     'username' => 'User Name',
     'name' => 'Name',
     'email' => 'E-mail',
-    'role' => 'Role',
 
     // Tables.
     'user' => 'User|Users',
