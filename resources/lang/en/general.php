@@ -37,6 +37,7 @@ return [
     'username' => 'User Name',
     'name' => 'Name',
     'email' => 'E-mail',
+    'password_confirm' => 'Confirm Password',
 
     // Tables.
     'user' => 'User|Users',

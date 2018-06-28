@@ -37,7 +37,7 @@ return [
     'username' => 'Nome utente',
     'name' => 'Nome',
     'email' => 'E-mail',
-    'role' => 'Ruolo',
+    'password_confirm' => 'Conferma Password',
 
     // Tables.
     'user' => 'Utente|Utenti',
