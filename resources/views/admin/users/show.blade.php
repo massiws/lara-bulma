@@ -25,7 +25,7 @@
                                 <p class="title is-4 is-spaced">{{ $user->name }}</p>
                                 <p class="subtitle is-6">{{ $user->email }}</p>
                                 <p>
-                                    <span>Ruolo: </span>
+                                    <span>{{ trans_choice('general.role', 1) }}: </span>
                                     <span class="tag is-info">{{ $user->role->name }}</span>
                                 </p>
                             </div>
