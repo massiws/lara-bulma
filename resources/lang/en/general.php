@@ -14,6 +14,9 @@ return [
     'edit_role' => 'Edit role',
     'edit_permission' => 'Edit permission',
 
+    // Menu
+    'profile' => 'Profile',
+
     // Alert messages
     'error_on_delete' => 'Error deleting entity!',
     'confirm_delete' => 'Are you sure to delete item :id?',
@@ -34,7 +37,7 @@ return [
     'username' => 'User Name',
     'name' => 'Name',
     'email' => 'E-mail',
-    'role' => 'Role',
+    'password_confirm' => 'Confirm Password',
 
     // Tables.
     'user' => 'User|Users',

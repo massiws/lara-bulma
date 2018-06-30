@@ -19,12 +19,12 @@
 
     <div class="field is-horizontal">
         <div class="field-label is-normal">
-            {!! Form::label('password_confirmation', 'Conferma Password', ['class' => 'label']) !!}
+            {!! Form::label('password_confirmation', __('general.password_confirm'), ['class' => 'label']) !!}
         </div>
         <div class="field-body">
             <div class="field">
                 <div class="control has-icons-left">
-                    {!! Form::password('password_confirmation', ['class' => 'input', 'placeholder' => 'Conferma Password', 'required' => '']) !!}
+                    {!! Form::password('password_confirmation', ['class' => 'input', 'placeholder' => __('general.password_confirm'), 'required' => '']) !!}
                     <span class="icon is-small is-left"><i class="fa fa-lock" aria-hidden="true"></i></span>
                 </div>
                 @includeWhen($errors->has('password_confirmation'), 'components.form.help', ['msg' => $errors->first('password_confirmation')])

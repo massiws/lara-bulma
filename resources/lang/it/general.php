@@ -14,6 +14,9 @@ return [
     'edit_role' => 'Modifica ruolo',
     'edit_permission' => 'Modifica permesso',
 
+    // Menu
+    'profile' => 'Profilo',
+
     // Alert messages
     'error_on_delete' => 'Errore durante la cancellazione!',
     'confirm_delete' => 'Confermi la cancellazione del record #:id?',
@@ -34,7 +37,7 @@ return [
     'username' => 'Nome utente',
     'name' => 'Nome',
     'email' => 'E-mail',
-    'role' => 'Ruolo',
+    'password_confirm' => 'Conferma Password',
 
     // Tables.
     'user' => 'Utente|Utenti',

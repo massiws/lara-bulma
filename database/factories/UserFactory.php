@@ -21,7 +21,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'name' => $faker->name,
         'role_id' => env('DEFAULT_ROLE', 2),
         'email' => $faker->unique()->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'password' => $password ?: '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
         'avatar' => $faker->file(
             $sourceDir = 'resources/images',
             $targetDir = 'public/' . env('AVATAR_FOLDER'),
