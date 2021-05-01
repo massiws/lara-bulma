@@ -1,7 +1,10 @@
 {
     "name": "massiws/lara-bulma",
     "description": "Starting boilerplate with RBAC management based on Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -10,7 +13,7 @@
         "fideloper/proxy": "^4.0",
         "intervention/image": "^2.5",
         "laravel-frontend-presets/bulma": "^2.0",
-        "laravel/framework": "5.6.*",
+        "laravel/framework": "^5.8.0",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.6"
     },
@@ -37,8 +40,7 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-            ]
+            "dont-discover": []
         }
     },
     "scripts": {

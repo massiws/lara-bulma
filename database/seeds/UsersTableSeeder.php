@@ -17,13 +17,13 @@ class UsersTableSeeder extends Seeder
                 'role_id' => env('ADMIN_ROLES', 1),
                 'name' => 'Super Admin',
                 'email' => 'admin@admin.com',
-                'password' => bcrypt('123456'),
+                'password' => bcrypt('password'),
             ],
             [
                 'role_id' => env('DEFAULT_ROLE', 2),
                 'name' => 'Simple user',
                 'email' => 'user@user.com',
-                'password' => bcrypt('123456'),
+                'password' => bcrypt('password'),
             ],
         ];
 
