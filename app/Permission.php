@@ -4,6 +4,7 @@ namespace App;
 
 use App\Role;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Permission extends Model
 {
@@ -25,8 +26,8 @@ class Permission extends Model
     protected function setNameAttribute($input)
     {
         if ($input) {
-            $this->attributes['name'] = title_case($input);
-            $this->attributes['slug'] = str_slug($this->attributes['name']);
+            $this->attributes['name'] = Str::title($input);
+            $this->attributes['slug'] = Str::slug($this->attributes['name']);
         }
     }
 

@@ -1,5 +1,5 @@
 # Admin panel starter kit
-A full Admin Panel to start with Laravel 5.6 and Bulma CSS.
+A full Admin Panel to start with Laravel 6 and Bulma CSS.
 ![Start admin template](storage/demo_pages/logo.png)
 
 ---
@@ -60,8 +60,8 @@ A full Admin Panel to start with Laravel 5.6 and Bulma CSS.
 1. `php artisan serve` : run you local server.
 
 1. Login:
-   - Administrator_ user: email *admin@admin.com* - password *123456*
-   - Simple user_ user: email *user@user.com* - password *123456*
+   - Administrator_ user: email *admin@admin.com* - password *password*
+   - Simple user_ user: email *user@user.com* - password *password*
 
 ### Bugs and Feedback
 For bugs, questions and suggestions please use [issue](https://github.com/massiws/lara-bulma/issues) section.

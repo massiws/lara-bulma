@@ -1,6 +1,7 @@
 <?php
 
 use App\Role;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 
 class RolesTableSeeder extends Seeder
@@ -21,7 +22,7 @@ class RolesTableSeeder extends Seeder
         $x = 0;
         foreach ($names as $name) {
             $role = new Role;
-            $role->slug = str_slug($name);
+            $role->slug = Str::slug($name);
             $role->name = $name;
             $role->save();
 

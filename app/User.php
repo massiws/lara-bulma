@@ -4,6 +4,7 @@ namespace App;
 
 use App\Role;
 use App\Permission;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -59,7 +60,7 @@ class User extends Authenticatable
     protected function setNameAttribute($input)
     {
         if ($input) {
-            $this->attributes['name'] = title_case($input);
+            $this->attributes['name'] = Str::title($input);
         }
     }
 
