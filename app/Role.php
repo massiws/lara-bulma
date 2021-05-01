@@ -4,6 +4,7 @@ namespace App;
 
 use App\User;
 use App\Permission;
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
@@ -26,8 +27,8 @@ class Role extends Model
     protected function setNameAttribute($input)
     {
         if ($input) {
-            $this->attributes['name'] = title_case($input);
-            $this->attributes['slug'] = str_slug($this->attributes['name']);
+            $this->attributes['name'] = Str::title($input);
+            $this->attributes['slug'] = Str::slug($this->attributes['name']);
         }
     }
 

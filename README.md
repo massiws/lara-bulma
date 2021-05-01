@@ -1,5 +1,5 @@
 # Admin panel starter kit
-A full Admin Panel to start with Laravel 5.8 and Bulma CSS.
+A full Admin Panel to start with Laravel 6 and Bulma CSS.
 ![Start admin template](storage/demo_pages/logo.png)
 
 ---

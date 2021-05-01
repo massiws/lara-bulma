@@ -1,6 +1,7 @@
 <?php
 
 use App\Permission;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -40,7 +41,7 @@ class DatabaseSeeder extends Seeder
         foreach ($permissions as $name) {
             $permission = new Permission;
             $permission->name = $name;
-            $permission->slug = str_slug($name);
+            $permission->slug = Str::slug($name);
             $permission->save();
         }
 
