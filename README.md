@@ -18,7 +18,7 @@ A full Admin Panel to start with Laravel 6 and Bulma CSS.
 - Responsive layout based on [Bulma CSS](https://bulma.io/) fully customizable;
 - [Beautiful theme](storage/demo_pages/screenshot.png) with sidebar menu displayed on mouse hover;
 - [Font Awesome](http://fontawesome.io) icons loaded by default;
-- Nice breadcrumbs (thanks to [laravel-breadcrumbs](https://github.com/davejamesmiller/laravel-breadcrumbs) package);
+- Nice breadcrumbs (thanks to [laravel-breadcrumbs](https://github.com/diglactic/laravel-breadcrumbs) package);
 - Auth management with CRUD for Users, Roles and Permissions: you can assign a role to each user and one or more permissions to each role in the UI;
 - User login, registration, activation and forgot password pages;
 - User's profile with avatar;
